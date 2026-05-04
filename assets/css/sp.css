@@ -42,18 +42,24 @@
         top: calc(40% - 48px); 
         left: 65%;
         transform: translateX(-50%);
-        font-size: 18px;
+        font-size: 4vw;
         white-space: nowrap;
         letter-spacing: 0px;
+        max-width: 90%;
+        overflow: hidden; 
+        text-overflow: ellipsis;
     }
 
     header > p:last-of-type {
         top: calc(30% + 16px);
         left: 68%;
         transform: translateX(-50%);
-        font-size: 17px;
+        font-size: 4vw;
         white-space: nowrap;
-        letter-spacing: 0px
+        letter-spacing: 0px;
+        max-width: 90%;
+        overflow: hidden; 
+        text-overflow: ellipsis;
     }
 
     /* SPハンバーガーメニュー */
