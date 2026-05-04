@@ -1,0 +1,325 @@
+.sp-menu {
+    display: none;
+}
+
+@media (max-width: 767px) {
+
+    .sp-menu {
+        display: block; 
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-bottom: 24px;
+    }
+
+    main section {
+        padding: 56px 5%;
+    }
+
+    /*header*/
+     header {
+        height: 60vw;
+        min-height: 240px; 
+    }
+
+    header h1 img {
+    height: 60vw;                  
+    min-height: 240px;
+}
+
+    /* PCナビを非表示 */
+    header nav {
+        display: none;
+    }
+
+     /* SPキャッチコピー調整 */
+    header > p:first-of-type {
+        top: calc(40% - 48px); 
+        left: 65%;
+        transform: translateX(-50%);
+        font-size: 18px;
+        white-space: nowrap;
+        letter-spacing: 0px;
+    }
+
+    header > p:last-of-type {
+        top: calc(30% + 16px);
+        left: 68%;
+        transform: translateX(-50%);
+        font-size: 17px;
+        white-space: nowrap;
+        letter-spacing: 0px
+    }
+
+    /* SPハンバーガーメニュー */
+    .sp-menu {
+        position: fixed;
+        top: 16px;
+        right: 16px;
+        z-index: 300;
+    }
+
+    /* ハンバーガーアイコン（div > span*3） */
+    .hamburger {
+        width: 32px;
+        height: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        z-index: 300;
+    }
+
+    .hamburger span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #1E3A8A;
+        transition: all 0.3s;
+    }
+
+    .hamburger.is-hidden {
+        display: none;
+    }
+
+    /* ドロワーメニュー（nav > ul > li > a*5） */
+    .sp-nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 60vw;
+        height: 100vh;
+        background-color: #1E3A8A;
+        border-left: 1px solid #7ec8e340;
+        z-index: 150;
+        transition: right 0.4s ease;
+        padding-top: 80px;
+    }
+
+    .sp-nav.is-open {
+        right: 0;
+    }
+
+    .sp-nav ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .sp-nav ul li a {
+        display: block;
+        text-align: center;
+        padding: 19px 32px;
+        color: #ffffff;
+        font-size: 24px;
+        letter-spacing: 0.1em;
+        transition: color 0.3s;
+    }
+
+    .sp-nav ul li a:hover {
+        color: #7ec8e3;
+    }
+
+    /* 閉じるボタン */
+    .sp-nav-close {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        width: 28px;
+        height: 28px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 32px;
+        color: #ffffff;
+    }
+
+    /* オーバーレイ */
+    .sp-overlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 140;
+    }
+
+    .sp-overlay.is-open {
+        display: block;
+    }
+
+     .fv-cta {
+    position: absolute;
+    top: 60%;
+    left: 65%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+  }
+
+  .cta-btn {
+    display: inline-block;
+    width: 40%;
+    max-width: 260px;
+    padding: 10px 0;
+    font-size: 14px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  }
+
+    /* About */
+    #about {
+        padding-top: 32px;    
+    }
+
+    #about h2 {
+        margin-bottom: 16px;  
+    }
+
+    #about p {
+        max-width: 320px;
+        font-size: 13px;
+        line-height: 2;
+        text-align: center;
+        margin: 0 auto;
+        letter-spacing: 0.05em;
+        padding: 0 37px;
+    }
+
+    /* Skill　Tools */
+    #skill {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+
+    #skill > div {
+    width: 60%;           
+    text-align: center;    
+    }
+
+
+    #skill > div:first-child ul li {
+        font-size: 13px;
+        text-align: center; 
+        word-break: keep-all; 
+    }
+
+    #skill > div:last-child ul li {
+        font-size: 14px;
+        padding: 16px 0; 
+    }
+
+    /* Strength */
+    #strength .strength-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+      }
+
+    #strength .strength-item {
+    width: 100%;
+    max-width: 240px;
+    justify-content: flex-start;
+    }
+
+    #strength .strength-text {
+    font-size: 13px;
+    white-space: normal;
+    }
+
+    /* Works */
+     #work ul {
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 24px;
+    }
+
+    #work ul li img {
+        width: 80%;
+        height: 160px;
+        margin: 0 auto 10px;
+    }
+
+    #work ul li a {
+        align-self: flex-end;
+    }  
+
+    #work ul li p:first-of-type {
+        font-size: 15px;
+    }
+
+    /* Contact */
+    #contact {
+        padding: 17px 5%;
+        position: relative; 
+        overflow: hidden;
+    }
+
+    #contact > a:active {
+    background-color: #7ec8e3;
+    color: #0a1628;
+    } 
+
+    .pc_footer {
+        display: none;
+    }
+
+    .sp_footer {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-position: center center;
+    opacity: 0.8;
+    }
+
+    #contact > a {
+        padding: 13px 32px;
+        font-size: 14px;
+    }
+
+    #contact p {
+        font-size: 12px; 
+    }
+
+    #contact > p:last-of-type {
+        font-size: 12px;
+    }
+
+    /* フッターナビ */
+    footer > section:last-of-type {
+        flex-direction: column-reverse;
+        gap: 5px;
+        text-align: center;
+        padding: 16px 5%;
+    }
+
+    footer > section:last-of-type small {
+        font-size: 10px;
+    }
+
+    footer > section:last-of-type nav ul {
+        gap: 13px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer > section:last-of-type nav ul li a {
+        font-size: 13px;
+    }
+
+    header nav ul li a:active {
+        background-color: #1E3A8A;
+        color: #fff;
+    }
+
+    #work ul li a:active {
+        color: #7ec8e3;
+    }
+
+    footer > section:last-of-type nav ul li a:active {
+        color: #7ec8e3;
+    }
+}
