@@ -192,7 +192,9 @@
         text-align: center;
         margin: 0 auto;
         letter-spacing: 0.05em;
-        padding: 0
+        padding: 0;
+        word-break: normal;
+        overflow-wrap: anywhere;
     }
 
     /* Skill　Tools */
