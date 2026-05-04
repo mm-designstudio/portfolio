@@ -17,6 +17,10 @@
         padding: 56px 5%;
     }
 
+    body {
+    overflow-x: hidden;
+}
+
     /*header*/
      header {
         height: 60vw;
@@ -182,7 +186,7 @@
         text-align: center;
         margin: 0 auto;
         letter-spacing: 0.05em;
-        padding: 0 37px;
+        padding: 0
     }
 
     /* Skill　Tools */
